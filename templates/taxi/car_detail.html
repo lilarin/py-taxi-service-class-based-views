@@ -9,9 +9,6 @@
     {% for driver in car.drivers.all %}
       <hr>
       <p>{{ driver.first_name }} {{ driver.last_name }}
-      {% if driver.pseudonym %}
-        ({{ driver.pseudonym }})
-      {% endif %}
       </p>
       <p class="text-muted">id: {{ driver.id }}</p>
     {% empty %}
